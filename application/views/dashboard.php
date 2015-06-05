@@ -12,14 +12,14 @@
     <title>Fixed Top Navbar Example for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<?php echo base_url('assets/css/navbar-fixed-top.css'); ?>" rel="stylesheet">
+    <link href="./assets/css/navbar-fixed-top.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="<?php echo base_url('assets/js/ie8-responsive-file-warning.js'); ?>"></script><![endif]-->
-    <script src="<?php echo base_url('assets/js/ie-emulation-modes-warning.js'); ?>"></script>
+    <!--[if lt IE 9]><script src="./assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,6 +31,7 @@
   <body>
 
     <!-- Fixed navbar -->
+    <!--
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -65,9 +66,118 @@
             <li><a href="../navbar-static-top/">Static top</a></li>
             <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
+    -->
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      	    <span class="sr-only">Toggle navigation</span>
+      	    <span class="icon-bar"></span>
+      	    <span class="icon-bar"></span>
+      	    <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brand</a>
+          </div>
+          <!--/.navbar-header-->
+       
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+      	        <li class="dropdown">
+      	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">One Column <b class="caret"></b></a>
+      	            <ul class="dropdown-menu">
+      		            <li class="dropdown-header">Action</li>
+      		            <li><a href="#">Another action</a></li>
+      		            <li><a href="#">Something else here</a></li>
+      		            <li class="divider"></li>
+      		            <li><a href="#">Separated link</a></li>
+      		            <li class="divider"></li>
+      		            <li><a href="#">One more separated link</a></li>
+      	            </ul>
+      	        </li>
+      	        <li class="dropdown">
+      	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Two Column <b class="caret"></b></a>
+      	            <ul class="dropdown-menu multi-column columns-2">
+      		            <div class="row">
+      			            <div class="col-sm-6">
+      				            <ul class="multi-column-dropdown">
+      					            <li class="dropdown-header">Action</li>
+      					            <li><a href="#">Another action</a></li>
+      					            <li><a href="#">Something else here that's extra long so we can see how it looks</a></li>
+      					            <li class="divider"></li>
+      					            <li><a href="#">Separated link</a></li>
+      					            <li class="divider"></li>
+      					            <li><a href="#">One more separated link</a></li>
+      				            </ul>
+      			            </div>
+      			            <div class="col-sm-6">
+      				            <ul class="multi-column-dropdown">
+      					            <li><a href="#">Action</a></li>
+      					            <li><a href="#">Another action</a></li>
+      					            <li><a href="#">Something else here</a></li>
+      					            <li class="divider"></li>
+      					            <li><a href="#">Separated link</a></li>
+      					            <li class="divider"></li>
+      					            <li><a href="#">One more separated link</a></li>
+      				            </ul>
+      			            </div>
+      		            </div>
+      	            </ul>
+      	        </li>
+      	        <li class="dropdown">
+      	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Three Column <b class="caret"></b></a>
+      	            <ul class="dropdown-menu multi-column columns-3">
+      		            <div class="row">
+      			            <div class="col-sm-4">
+      				            <ul class="multi-column-dropdown">
+      					            <li><a href="#">Action</a></li>
+      					            <li><a href="#">Another action</a></li>
+      					            <li><a href="#">Something else here</a></li>
+      					            <li class="divider"></li>
+      					            <li><a href="#">Separated link</a></li>
+      					            <li class="divider"></li>
+      					            <li><a href="#">One more separated link</a></li>
+      				            </ul>
+      			            </div>
+      			            <div class="col-sm-4">
+      				            <ul class="multi-column-dropdown">
+      					            <li><a href="#">Action</a></li>
+      					            <li><a href="#">Another action</a></li>
+      					            <li><a href="#">Something else here</a></li>
+      					            <li class="divider"></li>
+      					            <li><a href="#">Separated link</a></li>
+      					            <li class="divider"></li>
+      					            <li><a href="#">One more separated link</a></li>
+      				            </ul>
+      			            </div>
+      			            <div class="col-sm-4">
+      				            <ul class="multi-column-dropdown">
+      					            <li><a href="#">Action</a></li>
+      					            <li><a href="#">Another action</a></li>
+      					            <li><a href="#">Something else here</a></li>
+      					            <li class="divider"></li>
+      					            <li><a href="#">Separated link</a></li>
+      					            <li class="divider"></li>
+      					            <li><a href="#">One more separated link</a></li>
+      				            </ul>
+      			            </div>
+      		            </div>
+      	            </ul>
+      	        </li>
+      	        <li><a href="#">Link</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../navbar/">Default</a></li>
+                <li><a href="../navbar-static-top/">Static top</a></li>
+                <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+              </ul>
+          </div>
+        </div>
+        <!--/.navbar-collapse-->
+    </nav>
+    <!--/.navbar-->
 
     <div class="container">
 
@@ -88,8 +198,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="<?php echo base_url('assets/js/ie10-viewport-bug-workaround.js'); ?>"></script>
+    <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
